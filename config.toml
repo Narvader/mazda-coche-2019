@@ -1,0 +1,9 @@
+languageCode = "es-es"
+title = "Bienvenido a la fábrica de emociones de Mazda, arte y diseño en un único espacio"
+googleAnalytics = "UA-330997-1"
+
+[params]
+	comscore = "7215267"
+	chartbeat = "51507"
+	author = ""
+	newsSection = "Estilo"

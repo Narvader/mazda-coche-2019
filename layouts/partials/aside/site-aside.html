@@ -1,0 +1,69 @@
+<aside class="aside">
+		<div class="aside__content">
+			<a class="ec-logo" href="https://www.vanitatis.elconfidencial.com/" target="_blank">
+				<amp-img
+					src="https://www.ecestaticos.com/file/4252051145f0ff4b3998f336ab8e3f41/1548413057-logo_vanitatis.png"
+					alt="Logo de Vanitatis"
+					title="Vanitatis"
+					width="34"
+					height="22">
+				</amp-img>
+			</a>
+			<div class="share">
+				<amp-social-share type="twitter" class="share__icon"></amp-social-share>
+				<amp-social-share type="facebook" class="share__icon" data-param-app_id="1482570825397489"></amp-social-share>
+				<amp-social-share type="whatsapp" class="share__icon" media="(max-width: 767px)"></amp-social-share>
+			</div>
+			<amp-analytics type="googleanalytics" id="gaTopbar">
+				<script type="application/json">
+					{
+						"vars": {
+							"account": "{{ .Site.GoogleAnalytics }}"
+						},
+						"triggers": {
+							"trackClickOnLogoEC" : {
+								"on": "click",
+								"selector": ".ec-logo",
+								"request": "event",
+								"vars": {
+									"eventCategory": "Especial - {{ .Site.Title }}",
+									"eventAction": "clic",
+									"eventLabel": "Logo El Confidencial"
+								}
+							},
+							"trackClickOnFacebook" : {
+								"on": "click",
+								"selector": "amp-social-share[type='facebook']",
+								"request": "event",
+								"vars": {
+									"eventCategory": "Especial - {{ .Site.Title }}",
+									"eventAction": "share",
+									"eventLabel": "Facebook"
+								}
+							},
+							"trackClickOnTwitter" : {
+								"on": "click",
+								"selector": "amp-social-share[type='twitter']",
+								"request": "event",
+								"vars": {
+									"eventCategory": "Especial - {{ .Site.Title }}",
+									"eventAction": "share",
+									"eventLabel": "Twitter"
+								}
+							},
+							"trackClickOnWhatsApp" : {
+								"on": "click",
+								"selector": "amp-social-share[type='whatsapp']",
+								"request": "event",
+								"vars": {
+									"eventCategory": "Especial - {{ .Site.Title }}",
+									"eventAction": "share",
+									"eventLabel": "WhatsApp"
+								}
+							}
+						}
+					}
+				</script>
+			</amp-analytics>
+		</div>
+	</aside>

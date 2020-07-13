@@ -1,0 +1,513 @@
+@import "reset";
+
+
+#statsFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+//Variables
+$theme-color: #fc4261;
+$black: #000;
+$white: #fff;
+
+$playfair: 'Playfair Display', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+/*GENERAL*/
+body {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.8;
+}
+p {
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+  //padding-bottom: 50px;
+}
+a {
+  text-decoration: none;
+}
+strong {font-weight: 700}
+em {font-style: italic}
+
+.iframe-pixel {position: absolute;}
+/*HELPERS*/
+.relative {position: relative;}
+.text-center {text-align: center;}
+.color {color: $theme-color;}
+.bold {font-weight: bold;}
+
+.block-mobile {display: block;}
+
+//****SOCIALS NETWORK
+.aside {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: $black;
+  padding: 10px;
+  z-index: 10;
+  box-sizing: border-box;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.ec-logo {
+  line-height: 1;
+  padding: 0 10px 0 0;
+  margin: 0 5px 0 0;
+  border-right: 1px solid $white;
+}
+
+.share {
+  text-align: center;
+  &__icon {
+    max-width: 28px;
+    max-height: 28px;
+    background-color: transparent;
+    font-size: 18px;
+  }
+}
+
+//***** HEADER
+
+.header {
+  background: url(https://www.ecestaticos.com/file/770b52db23d47325877264233bf88c07/1548327675-320_carmen_castellon_portada.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  &__container {
+    padding-top: 30px;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+.title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 1.79px;
+  padding-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1.2px;
+}
+
+.line-mobile {
+  transform: translate(5%, -12px);
+}
+
+.author{
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  &__division {display: none;}
+  &__content {
+    width: 100%;
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    transform: translateX(-36%);
+    color: $white;
+  }
+}
+
+
+
+.powered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    &.display-desktop {display: none;}
+    &__text {
+      font-family: $playfair, serif;
+      color: $black;      
+      font-size: 16px;
+      font-weight: 400;
+      transform: translate(-8px, -2px);
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      max-width: 98px;
+      max-height: 25px;
+    }
+  }
+
+//***** CONTENT
+
+.intro {
+  position: relative;
+  margin: 120px 38px 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.capital-letter {
+  font-style: italic;
+  font-size: 144px;
+  font-size: 139px;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-12%, -100%);
+  z-index: -1;
+}
+
+.inner {
+  background-color: $black;
+}
+
+.container {
+  &__text {
+    padding: 0 38px;
+    margin: 0 auto;
+    p {
+      font-size: 14px;
+      line-height: 1.43;
+      letter-spacing: 0.35px;
+    }
+  }
+  &--two {padding: 27px 38px;}
+  &--three {padding: 27px 38px;}
+  &--four {padding: 82px 38px 72px;}
+  &--five {padding: 48px 38px 62px;}
+  &--six {padding: 48px 38px 62px;}
+}
+
+.text--bottom, .video {
+  padding-bottom: 50px;
+}
+
+
+//**** FOOTER
+
+.footer {
+  font-size: 12px;
+  color: $white;
+  background: black;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  &-title {
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+  }
+  &__legal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0 0;
+  }
+  &__copy, &__menu, &__note {margin: 0}
+  &__menu {
+    list-style: none;
+    padding: 0 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-item {margin: 0 10px;}
+    &-link {
+      color: #fff;
+      font-weight: 500;
+      &:hover {text-decoration: underline}
+    }
+  }
+  &__note {text-align: center;}
+  &__copy {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-height: 700px) {
+
+  .header__container {
+    padding-top: 70px;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .block-mobile {display: initial;}
+  
+  .powered {
+    padding-top: 0;
+    &.display-mobile {display: none;}
+    &.display-desktop {display: flex;}
+  }
+
+  //***** SOCIAL NETWORKS
+  .aside {
+    max-width: 54px;
+    bottom: auto;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    &__content {
+      flex-direction: column;
+    }
+  }
+
+  .ec-logo {
+    padding: 0 0 10px;
+    margin: 0 0 5px;
+    border-right: 0;
+    border-bottom: 1px solid $white;
+    
+  }
+
+  .share__icons {
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -o-transition: opacity .4s;
+    transition: opacity .4s;
+    display: block;
+    &:hover {opacity: .6}
+    &:focus {outline: none}
+  }
+
+  //***** HEADER
+
+  .line-mobile {display: none;}
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://www.ecestaticos.com/file/9d1169ec8b136bb5484be37dd06f34f2/1548254871-el_confidencial-carmen_castellon-portada.jpg) no-repeat center;
+    background-size: cover;
+    &__container {
+      width: 85%;
+      margin: 0 auto;
+      padding-top: 0;
+    }
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.44;
+    border: 1px solid;
+    padding: 30px 30px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 2.5;
+    letter-spacing: 1.8px;
+    width: 75%;
+    -webkit-transform: translatey(-23px);
+    -moz-transform: translatey(-23px);
+    -o-transform: translatey(-23px);
+    -ms-transform: translatey(-23px);
+    transform: translatey(-23px);
+    display: block;
+    margin: 0 auto;
+    background: $black;
+  }
+
+  .author{
+    &__division {
+      display: block; 
+      padding: 0 12px;
+    }
+    &__content {
+      left: 0;
+      transform: translateX(0);
+      bottom: auto;
+      top: 40px;
+      display: flex;
+      justify-content: center;
+      font-size: 13px;
+    }
+  }
+
+  .powered {
+    position: absolute;
+    bottom: 70px;
+    &__text {color: $white;}
+  }
+
+
+
+  //***** CONTENT
+
+  .intro {
+    max-width: 596px;
+    margin: 203px auto 150px;
+    text-align: left;
+  }
+
+  .container {
+    &__text {
+      padding: 0;
+      max-width: 640px;
+      p {
+        max-width: 388px;
+      }
+      .margin-right {
+        margin-left: auto;
+      }
+    }
+    &--two {padding: 0;}
+    &--three {padding: 85px 0 72px;}
+    &--four {padding: 82px 0 72px;}
+    &--five {padding: 0 0 62px;}
+    &--six {padding: 48px 0 62px;}
+
+  }
+
+  .text--left {margin-left: auto;}
+
+  .row {
+    &__three {margin-top: 120px;}
+    &__five {margin-top: 150px;}
+  }
+
+
+  //**** FOOTER
+
+  .footer {
+    &__menu {
+      flex-direction: row;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 993px) {
+
+  .powered {
+    bottom: auto;
+    top: 38px;
+    left: auto;
+    justify-content: flex-end;
+    right: 20px;
+  }
+
+
+  .header {
+    &__container {
+      width: 100%;
+      max-width: 840px;
+      transform: translateY(150px);
+    }
+  }
+
+  .subtitle {
+    width: 62%;
+  }
+
+
+  //***** CONTENT
+
+  .container {
+    &__text {
+      z-index: 1;
+      max-width: 917px;
+      &.desktop-position {
+        position: absolute;
+        left: 50%;
+        width: 100%;
+      } 
+    }
+    &--one {
+      bottom: 0;
+      transform: translate(-50%, 50%);
+    }
+    &--two {
+      transform: translateX(-50%);
+    }
+    &--three {
+      padding: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--four {
+      padding: 0;
+      top: 50%;
+      transform: translate(-50%, -100%);
+    }
+    &--five {
+      padding: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--six {
+      padding: 0;
+      bottom: 0;
+      transform: translate(-50%, 90%);
+    }
+  }
+
+  .row {
+    &__three {margin-top: 294px;}
+    &__four {margin-top: 222px;}
+    &__six {transform: translateY(-10%)}
+    &__seven {margin-top: 236px;}
+  }
+
+  .img {
+    &__half {width: 55%;}
+    &__95 {width: 95%;}
+  }
+
+  .video {
+    max-width: 917px;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media screen and (min-width: 1150px) {
+
+  .header {
+    &__container {
+      max-width: 1030px;
+    }
+  }
+
+  .title {
+    font-size: 29px;
+    line-height: 1.43;
+    letter-spacing: 2.47px;
+  }
+
+}
