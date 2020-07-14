@@ -190,10 +190,10 @@ em {font-style: italic}
     }
   }
   &--two {padding: 27px 38px;}
-  &--three {padding: 27px 38px;}
-  &--four {padding: 82px 38px 72px;}
+  &--three {padding: 82px 38px 72px;}
+  &--four {padding: 89px 38px 44px;}
   &--five {padding: 48px 38px 62px;}
-  &--six {padding: 48px 38px 62px;}
+  &--six {padding: 61px 38px 0;}
 }
 
 .text--bottom, .video {
@@ -314,6 +314,7 @@ em {font-style: italic}
       width: 85%;
       margin: 0 auto;
       padding-top: 0;
+      transform: translateY(220px);
     }
   }
 
@@ -387,8 +388,8 @@ em {font-style: italic}
     &--two {padding: 0;}
     &--three {padding: 85px 0 72px;}
     &--four {padding: 82px 0 72px;}
-    &--five {padding: 0 0 62px;}
-    &--six {padding: 48px 0 62px;}
+    &--five {padding: 48px 0 62px;}
+    &--six {padding: 48px 0 0;}
 
   }
 
@@ -431,7 +432,7 @@ em {font-style: italic}
   }
 
   .subtitle {
-    width: 62%;
+    width: 467px;
   }
 
 
@@ -485,6 +486,7 @@ em {font-style: italic}
 
   .img {
     &__half {width: 55%;}
+    &__58 {width: 58%;}
     &__95 {width: 95%;}
   }
 
@@ -508,6 +510,10 @@ em {font-style: italic}
     font-size: 29px;
     line-height: 1.43;
     letter-spacing: 2.47px;
+  }
+
+  .subtitle {
+      width: 473px;
   }
 
 }
