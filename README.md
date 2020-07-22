@@ -8,7 +8,7 @@ This project is about the presentation of a new Mazda's car in Madrid. It is dev
 
 ## Link
 
-Go to the (website)[https://www.vanitatis.elconfidencial.com/estilo/2019-01-31/mazda3-diseno-kodo-presentacion-madrid_1782930/]!
+Go to the [website](https://www.vanitatis.elconfidencial.com/estilo/2019-01-31/mazda3-diseno-kodo-presentacion-madrid_1782930/)!
 
 ## Style
 
