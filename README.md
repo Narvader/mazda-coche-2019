@@ -4,7 +4,7 @@
 
 Title: Bienvenido a la fábrica de emociones de Mazda, arte y diseño en un único espacio
 
-This project is about the presentation of a new Mazda's car in Madrid. It is developed with both Hugo and AMP frameworks and was designed by Carmen Castellón
+This project is about the presentation of a new Mazda's car in Madrid. It is developed with both Hugo and AMP frameworks and was designed by Carmen Castellón.
 
 ## Link
 
